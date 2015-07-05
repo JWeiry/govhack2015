@@ -1,0 +1,49 @@
+
+
+body
+{
+    background-color: #000000;
+    color: #00dd00;
+    font-family: Courier, "Courier New", monospace;
+	
+}
+
+p
+{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.bright {color: #99ff99;}
+
+.btn.outline {
+	
+	font-family: Helvetica, Arial, sans-serif;
+    background: none;
+    padding: 12px 22px;
+	color: #00dd00;
+	border-color: #00dd00;
+}
+
+.btn.outline:hover {
+	
+ background: #00dd00;
+ color: #000;
+ 
+}
+
+.theimg {transition: all 4s ease;}
+
+.shine {filter:   contrast(110%) brightness(190%);
+	-webkit-filter:  contrast(110%)  brightness(190%);
+-webkit-transform: rotate(2deg) scale(0.9,0.9);
+transform: rotate(2deg) scale(0.9,0.9);
+ }
+
+ .shine2 {filter:   contrast(110%) brightness(190%);
+ 	-webkit-filter:  contrast(110%)  brightness(190%);
+ -webkit-transform: rotate(19deg) scale(0.1,0.1);
+ transform: rotate(19deg) scale(0.1,0.1);
+  }
+
+

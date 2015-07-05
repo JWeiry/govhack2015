@@ -1,0 +1,227 @@
+/*
+This was coded by João Sardinha
+Visit me at http://johnsardine.com/
+
+It has been tested in all modern browsers.
+
+This coming soon page design has been created by the awesome Orman Clark,
+you can download a PSD version of this at his website, PremiumPixels.
+http://www.premiumpixels.com/freebies/coming-soon-splash-page-psd/
+*/
+
+/*
+Im reseting this style for optimal view using Eric Meyer's CSS Reset - http://meyerweb.com/eric/tools/css/reset/
+------------------------------------------------------------------ */
+body, html  { height: 100%; }html, body, div, span, applet, object, iframe,/*h1,2, h3, h4, h5, h6,*/ p, blockquote, pre,a, abbr, acronym, address,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;}body { line-height: 1; }ol, ul { list-style: none; }blockquote, q { quotes: none; }blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }:focus { outline: 0; }del { text-decoration: line-through; }table {border-spacing: 0; }
+
+/* Clear Floated Elements http://sonspring.com/journal/clearing-floats */
+.clear {clear: both;display: block;overflow: hidden;visibility: hidden;width: 0;height: 0;}
+
+/*------------------------------------------------------------------ */
+
+/* Page Style */
+body{
+    color: #e9e2ee;
+    font-size: 14px;
+    font-family: Courier, "Courier New", monospace;
+    line-height: 20px;
+    background:black;
+    color: #0D0;
+/*
+    text-shadow: 0 1px 1px rgba(0,0,0,0.75);
+    background: #55575c url(/assets/img/bg.jpg);
+    -webkit-box-shadow: inset 0 0 300px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0 0 300px rgba(0,0,0,0.5);
+    box-shadow: inset 0 0 300px rgba(0,0,0,0.5);
+*/
+}
+footer a,
+footer a :link,
+footer a :visited{
+    font-weight:normal;
+    text-decoration:none;
+    color:#eee;
+}
+footer a:active,
+footer a:hover,
+footer a:focus{
+    color:white!important;
+}
+a.twitter ,
+a.twitter :link,
+a.twitter :visited {
+    color: #c6eaf7;
+    font-weight: bold;
+    text-decoration:none;
+}
+a.twitter :active,
+a.twitter :hover {
+    color: #d8f3fd;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.75), 0 0 5px rgba(198,234,247,0.4);
+}
+
+p{
+    margin-bottom: 0.3em;
+}
+.center,
+img.center {
+    text-align: center;
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#coming-soon{
+    background: rgba(0,0,0,0.0);
+    display: block;
+/*
+    position: absolute;
+    width: 800px;
+    height: 280px;
+    top: 50%;
+    left: 50%;
+    margin: -160px 0 0 -400px;
+*/
+}
+#coming-soon h1{
+    text-align: center;
+    font-size: 35px;
+    margin:30px 0;
+}
+#coming-soon h3{
+    text-align: center;
+    margin:10px 0;
+}
+#coming-soon img{
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+#coming-soon p{
+    text-align: center;
+}
+
+footer {
+    position:relative;
+    width:100%;
+    bottom:0px;
+    margin:0 auto;
+    margin-top:50px;
+}
+footer div {
+    position:relative;
+    margin:0 auto;
+}
+footer .twitter:before{
+    content: '@';
+    padding-top: 2px;
+    padding-left: 24px;
+    background: url(/assets/img/twitter.png) no-repeat 0 0px;
+}
+footer .twitter{
+    padding-top: 5px;
+}
+
+/*---- Custom ---- */
+pre{
+    color: #ccc;
+}
+.header ul li{ float:left; margin:5px 15px; }
+.header ul li a:link,
+.header ul li a:visited{
+    color: #0D0;
+}
+.header ul li a:hover,
+.header ul li a:focus{
+    color: white;
+}
+#coming-soon h1{ margin: 30px 0 10px 0; }
+.instructions{ text-align: left!important; margin:15px 0; }
+h4{ text-align:center; }
+p.small{ font-size: 0.8em; margin:0 0 5px 0;}
+.cats.container .row{
+    background:black;
+    color:limegreen;
+    clear:both;
+}
+button,.btn,
+input[type=text]{
+    background:black;
+    border: none;
+    color: #0D0;
+    border-radius:0;
+}
+button:hover,.btn:hover,
+button:active,.btn:active,
+button:link,.btn:link,
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default
+{
+    background:black;
+    border:0;
+    color: #0D0;
+}
+div.head,
+input[type=text]:focus,
+input[type=text]{
+    padding: 10px 5px;
+    border-bottom: 1px solid #0D0;
+}
+.form-control:focus{
+    border:0;
+    box-shadow:none;
+    border-color:transparent;
+    outline:none;
+}
+#result{
+    margin-top:20px;
+}
+.result{
+    margin:5px 0;
+}
+.result div{
+    text-align:left;
+}
+table.dataTable tbody tr{
+    background: black;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button,
+.dataTables_wrapper .dataTables_paginate .ellipsis,
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate{
+    color: #0D0!important;
+}
+table.dataTable tbody th, table.dataTable tbody td{
+    text-align:left;
+}
+.dataTables_wrapper div select,
+.dataTables_wrapper .dataTables_filter input{
+    color:black!important;
+}
+
+/*---- Cursor ----*/
+.typed-cursor{ display:none; }
+/*
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+*/
