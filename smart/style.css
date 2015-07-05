@@ -46,4 +46,14 @@ transform: rotate(2deg) scale(0.9,0.9);
  transform: rotate(19deg) scale(0.1,0.1);
   }
 
-
+.header{ position: absolute; }
+.header ul{ list-style:none; }
+.header ul li{ float:left; margin:5px 15px; }
+.header ul li a:link,
+.header ul li a:visited{
+    color: #0D0;
+}
+.header ul li a:hover,
+.header ul li a:focus{
+    color: white;
+}

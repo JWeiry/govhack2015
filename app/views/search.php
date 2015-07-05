@@ -46,11 +46,10 @@ class search {
             $q = "select {$select} from ipgod102 where ".implode(" OR ",$matches);
         }
         error_log("q: ".$q);
-        $q .=  " limit 20";
+        $q .=  " limit 500";
         $arr = $db->setQuery($q);
         $return = $db->get('all');
 
-//        error_log("return: ".json_encode($return));
         if(!empty($q)) return $return;
         return false;
     }

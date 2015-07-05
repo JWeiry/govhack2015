@@ -15,6 +15,12 @@ $(document).ready(function(){
         console.log( "Request Failed: " + err );
     })
 */
+    $("#query").on('keypress', function(e){
+        if (e.keyCode == 13) {
+            e.preventDefault();
+            $("#search").click();
+        }
+    });
     $("#search").click(function(){
         var doma = $("#query").val();
         $.ajax({
@@ -83,7 +89,7 @@ var setResult = function(data) {
     oTable.show('fast');
     $.each(data, function(){
         oTable.fnAddData([
-            this.australian_appl_no,
+            '<a target="_blank" href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo='+this.australian_appl_no+'">'+this.australian_appl_no+'</a>',
             this.abn,
             this.source,
             this.name
